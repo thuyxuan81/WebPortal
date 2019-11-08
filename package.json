@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/FaSidd/SoftwareEngineering/issues"
   },
-  "homepage": "https://github.com/FaSidd/SoftwareEngineering#readme"
+  "homepage": "https://github.com/FaSidd/SoftwareEngineering#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.9",
+    "request": "^2.88.0"
+  }
 }

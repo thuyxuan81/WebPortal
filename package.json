@@ -4,14 +4,15 @@
   "description": "project for class",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "server": "nodemon server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FaSidd/SoftwareEngineering.git"
   },
-  "author": "Fahad Siddiqi Naveed Panjwani Thuy Nguyen",
-  "license": "MIT",
+  "author": "Fahad Siddiqi, Naveed Panjwani, Thuy Nguyen",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/FaSidd/SoftwareEngineering/issues"
   },

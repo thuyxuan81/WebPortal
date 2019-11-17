@@ -1,5 +1,5 @@
 {
-  "name": "softwareengineering",
+  "name": "webportal",
   "version": "1.0.0",
   "description": "project for class",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FaSidd/SoftwareEngineering.git"
+    "url": "git+https://github.com/FaSidd/WebPortal.git"
   },
   "author": "Fahad Siddiqi, Naveed Panjwani, Thuy Nguyen",
   "license": "GNU",
   "bugs": {
-    "url": "https://github.com/FaSidd/SoftwareEngineering/issues"
+    "url": "https://github.com/FaSidd/WebPortal/issues"
   },
-  "homepage": "https://github.com/FaSidd/SoftwareEngineering#readme",
+  "homepage": "https://github.com/FaSidd/WebPortal#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.2.4",

@@ -3,7 +3,7 @@ const router = express.Router();
 const auth = require('../../middleware/auth');
 const jwt = require('jsonwebtoken');
 const config = require('config');
-const {check, validationResult} = require('express-validator/check');
+const {check, validationResult} = require('express-validator');
 const bcrypt = require('bcryptjs');
 
 const User = require('../../models/User');
@@ -48,16 +48,12 @@ router.post(
        res.status(400).json({errors: [{ msg: 'Invalid Credentials no user' }]});
       }
 
-
-
       const match = await bcrypt.compare(password, user.password);
 
       if(!match) {
           return res.status(400).json({errors: [{msg: 'Invalid Credentials here' }]});
       }
   
-
-
       const payload = {
         user: {
           id: user.id

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 
 const Landing = () => {
     return (
@@ -10,8 +11,9 @@ const Landing = () => {
             Please Log In
           </p>
           <div className="buttons">
-
-            <a href="login.html" className="btn btn-light">Login</a>
+            <Link to="/login" className="btn btn-light">
+              Login
+            </Link>
           </div>
         </div>
       </div>

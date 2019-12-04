@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const auth = require('../../middleware/auth');
 
-const Profile = require('../../models/Profile');
+const Profile = require('../../models/User');
 const User = require('../../models/User');
 
 // @route GET api/profile/me

@@ -79,8 +79,23 @@ const Dashboard = ({
           </Link>
         </p>
         <p>
-          <Link to='/Sales-Reports' className='btn btn-primary my-1'>
-            Other Reports
+          <Link to='/Finance-Reports' className='btn btn-primary my-1'>
+            Finance Reports
+          </Link>
+        </p>
+        <p>
+          <Link to='/Accounts-Payable' className='btn btn-primary my-1'>
+            Accounts Payable
+          </Link>
+        </p>
+        <p>
+          <Link to='/Accounts-Receivables' className='btn btn-primary my-1'>
+            Accounts Receivables
+          </Link>
+        </p>
+        <p>
+          <Link to='/Tax' className='btn btn-primary my-1'>
+            Tax
           </Link>
         </p>
       </Fragment>
@@ -95,8 +110,48 @@ const Dashboard = ({
           {user && lastName} your role is {user && role}
         </p>
         <p>
-          <Link to='/Sales-Reports' className='btn btn-primary my-1'>
-            Other Reports
+          <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
+            Manage User Accounts
+          </Link>
+        </p>
+        <p>
+          <Link to='/Assign-Roles' className='btn btn-primary my-1'>
+            Assign Roles
+          </Link>
+        </p>
+        <p>
+          <Link to='/Help-Desk' className='btn btn-primary my-1'>
+            Help Desk
+          </Link>
+        </p>
+        <p>
+          <Link to='/New-Hire' className='btn btn-primary my-1'>
+            New Hire
+          </Link>
+        </p>
+        <p>
+          <Link to='/On-boarding' className='btn btn-primary my-1'>
+            On-boarding
+          </Link>
+        </p>
+        <p>
+          <Link to='/Benefits' className='btn btn-primary my-1'>
+            Benefits
+          </Link>
+        </p>
+        <p>
+          <Link to='/Payroll' className='btn btn-primary my-1'>
+            Payroll
+          </Link>
+        </p>
+        <p>
+          <Link to='/Terminations' className='btn btn-primary my-1'>
+            Terminations
+          </Link>
+        </p>
+        <p>
+          <Link to='/HR' className='btn btn-primary my-1'>
+            HR
           </Link>
         </p>
       </Fragment>

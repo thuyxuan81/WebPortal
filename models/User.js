@@ -19,7 +19,7 @@ const UsersSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    required: true
+    default: "null"
   },
   date: {
     type: Date,

@@ -14,7 +14,7 @@ const Dashboard = ({
     getCurrentProfile();
   }, []);
 
-  if (role == 'Sales Admin') {
+  if (role === 'Sales Admin') {
     return (
       <Fragment>
         <h1 className='large text-primary'>Dashboard</h1>
@@ -101,7 +101,7 @@ const Dashboard = ({
       </Fragment>
     );
   }
-  if (role == 'HR Admin') {
+  if (role === 'HR Admin') {
     return (
       <Fragment>
         <h1 className='large text-primary'>Dashboard</h1>
@@ -157,7 +157,7 @@ const Dashboard = ({
       </Fragment>
     );
   }
-  if (role == 'Engineering Admin') {
+  if (role === 'Engineering Admin') {
     return (
       <Fragment>
         <h1 className='large text-primary'>Dashboard</h1>
@@ -208,7 +208,7 @@ const Dashboard = ({
       </Fragment>
     );
   }
-  if (role == 'Admin') {
+  if (role === 'Admin') {
     return (
       <Fragment>
         <h1 className='large text-primary'>Dashboard</h1>

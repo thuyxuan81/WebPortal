@@ -166,8 +166,43 @@ const Dashboard = ({
           {user && lastName} your role is {user && role}
         </p>
         <p>
-          <Link to='/Sales-Reports' className='btn btn-primary my-1'>
-            Other Reports
+          <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
+            Manage User Accounts
+          </Link>
+        </p>
+        <p>
+          <Link to='/Assign-Roles' className='btn btn-primary my-1'>
+            Assign Roles
+          </Link>
+        </p>
+        <p>
+          <Link to='/Help-Desk' className='btn btn-primary my-1'>
+            Help Desk
+          </Link>
+        </p>
+        <p>
+          <Link to='/Application-Monitoring' className='btn btn-primary my-1'>
+            Application Monitoring
+          </Link>
+        </p>
+        <p>
+          <Link to='/Tech-Support' className='btn btn-primary my-1'>
+            Tech Support
+          </Link>
+        </p>
+        <p>
+          <Link to='/App-Development' className='btn btn-primary my-1'>
+            App Development
+          </Link>
+        </p>
+        <p>
+          <Link to='/App-Admin' className='btn btn-primary my-1'>
+            App Admin
+          </Link>
+        </p>
+        <p>
+          <Link to='/Release-Management' className='btn btn-primary my-1'>
+            Release Management
           </Link>
         </p>
       </Fragment>

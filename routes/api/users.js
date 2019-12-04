@@ -19,10 +19,7 @@ router.post(
     check('email', 'Please enter valid email address')
       .isEmail(),
     check('password', 'Please enter a password with 8 or more characters')
-      .isLength({ min: 8}),
-    check('role', 'Role is required')
-      .not()
-      .isEmpty()
+      .isLength({ min: 8})
   ],
 
   
@@ -32,7 +29,7 @@ router.post(
       return res.status(400).json({errors: errors.array()})
     }
 
-    const {firstName, lastName, email, password, role} = req.body;
+    const {firstName, lastName, email, password} = req.body;
 
     try {
 
@@ -47,7 +44,6 @@ router.post(
       lastName,
       email, 
       password,
-      role
     });
 
     const salt = await bcrypt.genSalt(10);

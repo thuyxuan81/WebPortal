@@ -32,7 +32,7 @@ const Dashboard = ({
         <h1 className='large text-primary'>Dashboard</h1>
         <p className='lead'>
           <i className='fas fa-user' /> Welcome {user && firstName}{' '}
-          {user && lastName} your role is {user && role}
+          {user && lastName}
         </p>
         <p>
           <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
@@ -73,7 +73,7 @@ const Dashboard = ({
         <h1 className='large text-primary'>Dashboard</h1>
         <p className='lead'>
           <i className='fas fa-user' /> Welcome {user && firstName}{' '}
-          {user && lastName} your role is {user && role}
+          {user && lastName}
         </p>
         <p>
           <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
@@ -119,7 +119,7 @@ const Dashboard = ({
         <h1 className='large text-primary'>Dashboard</h1>
         <p className='lead'>
           <i className='fas fa-user' /> Welcome {user && firstName}{' '}
-          {user && lastName} your role is {user && role}
+          {user && lastName}
         </p>
         <p>
           <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
@@ -175,7 +175,7 @@ const Dashboard = ({
         <h1 className='large text-primary'>Dashboard</h1>
         <p className='lead'>
           <i className='fas fa-user' /> Welcome {user && firstName}{' '}
-          {user && lastName} your role is {user && role}
+          {user && lastName}
         </p>
         <p>
           <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>

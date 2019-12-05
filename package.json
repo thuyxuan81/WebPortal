@@ -21,11 +21,13 @@
   "homepage": "https://github.com/FaSidd/WebPortal#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.4.1",
     "config": "^3.2.4",
     "express": "^4.17.1",
     "express-validator": "^6.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.7.9",
+    "react-bootstrap": "^1.0.0-beta.16",
     "request": "^2.88.0"
   },
   "devDependencies": {

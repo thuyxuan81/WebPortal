@@ -208,32 +208,6 @@ const Dashboard = ({
       </Fragment>
     );
   }
-  if (role === 'Admin') {
-    return (
-      <Fragment>
-        <h1 className='large text-primary'>Dashboard</h1>
-        <p className='lead'>
-          <i className='fas fa-user' /> Welcome {user && firstName}{' '}
-          {user && lastName} your role is {user && role}
-        </p>
-        <p>
-          <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
-            Manage User Accounts
-          </Link>
-        </p>
-        <p>
-          <Link to='/Assign-Roles' className='btn btn-primary my-1'>
-            Assign Roles
-          </Link>
-        </p>
-        <p>
-          <Link to='/Help-Desk' className='btn btn-primary my-1'>
-            Help Desk
-          </Link>
-        </p>
-      </Fragment>
-    );
-  }
 };
 
 Dashboard.propTypes = {

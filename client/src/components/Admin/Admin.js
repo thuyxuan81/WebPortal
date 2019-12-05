@@ -4,6 +4,7 @@ import { logout } from '../../actions/auth';
 import { connect } from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
 import axios from 'axios';
+import { Table, Container} from 'react-bootstrap';
 
 
 const Admin = ({ auth: {user}, logout}) => {
@@ -58,12 +59,67 @@ export default connect(mapStateToProps, {
 })(Admin);*/
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Table, Container, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const Admin = props => {
+const Admin = () => {
   return (
-    <div>
-      Admin
-    </div>
+    <>
+      <h2>Admin Dashboard</h2>
+    <Container>
+      <Row>
+        <Col>
+          <p>
+            <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
+              Manage User Accounts
+            </Link>
+          </p>
+          <p>
+            <Link to='/Assign-Roles' className='btn btn-primary my-1'>
+              Assign Roles
+            </Link>
+          </p>
+          <p>
+            <Link to='/Help-Desk' className='btn btn-primary my-1'>
+              Help Desk
+            </Link>
+          </p>
+        </Col>
+        <Col md={{ span: 8, offset: 1}}>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>hello@gmail.com</td>
+                <td>Admin</td>
+              </tr>
+              <tr>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>jacob@hi.com</td>
+                <td>Finance Admin</td>
+              </tr>
+              <tr>
+                <td>Larry</td>
+                <td>Bird</td>
+                <td>lbird@web.com</td>
+                <td>Engineering Admin</td>
+              </tr>
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
+    </Container>
+    </>
   )
 }
 

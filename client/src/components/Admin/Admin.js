@@ -81,6 +81,34 @@ const Admin = ({ auth: {user}, logout}) => {
                   ))}
                 </tbody>
               </Table>
+              <div style={{
+                display: 'flex',
+                justifyContent: 'spaces-between'
+              }}>
+                <h4>Select role of </h4>
+                <select
+                  value={value}
+                  onChange={handleChange}
+                  className='browser-default'
+                  name='role'
+                  required
+                >
+                  <option value=''>Select</option>
+                  <option value='Admin'>
+                      Admin
+                  </option>
+                  <option value='Finance Admin'>
+                      {' '}
+                      Finance Admin
+                  </option>
+                  <option value='Sales Admin'>Sales Admin</option>
+                  <option value='HR Admin'>HR Admin</option>
+                  <option value='Engineering Admin'>
+                      Engineering Admin
+                  </option>
+                  <option value='Null'>Null</option>
+                </select>
+              </div>
             </form>
           </Col>
         </Row>

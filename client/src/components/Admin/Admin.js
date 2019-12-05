@@ -49,11 +49,6 @@ const Admin = ({ auth: {user}, logout}) => {
               </Link>
             </p>
             <p>
-              <Link to='/Assign-Roles' className='btn btn-primary my-1'>
-                Assign Roles
-              </Link>
-            </p>
-            <p>
               <Link to='/Help-Desk' className='btn btn-primary my-1'>
                 Help Desk
               </Link>

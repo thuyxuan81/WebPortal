@@ -14,6 +14,32 @@ const Dashboard = ({
     getCurrentProfile();
   }, []);
 
+
+  if (role === 'none') {
+    return (
+      <>
+        <h1 className='large text-primary'>You dont have a role assinged</h1>
+      </>
+    );
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   if (role === 'Sales Admin') {
     return (
       <Fragment>

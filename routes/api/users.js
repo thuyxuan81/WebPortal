@@ -89,4 +89,39 @@ router.post(
   } 
 );
 
+router.put('/:id', async (req, res) => {
+  const condition = { _id: req.params.id };
+  console.log('REQ: ', condition);
+
+  const { role } = req.body;
+  console.log('Body: ', role);
+
+  const user = await User.findById(req.params.id);
+  console.log('User: ', user.role);
+
+  if (role == user.role) {
+      return res.status(400).json({
+          errors: [{ msg: 'Cannot update role' }]
+      });
+  }
+  if (user) {
+      await User.findByIdAndUpdate(
+          req.params.id,
+          { role: role },
+          (err, obj) => {
+              if (err) {
+                  return res.status(400).json({
+                      errors: err
+                  });
+              }
+              return res.json(obj);
+          }
+      );
+  } else {
+      return res.status(400).json({
+          errors: [{ msg: 'User not found' }]
+      });
+  }
+});
+
 module.exports = router;

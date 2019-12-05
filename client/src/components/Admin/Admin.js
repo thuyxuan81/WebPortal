@@ -101,7 +101,7 @@ const Admin = ({ auth: {user}, logout}) => {
                   <option value='Engineering Admin'>
                       Engineering Admin
                   </option>
-                  <option value='null'>Null</option>
+                  <option value='none'>None</option>
                 </select>
                 <h5> for user </h5>
                   <select

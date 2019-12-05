@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { getCurrentProfile } from '../../actions/profile';
 
 const Dashboard = ({
@@ -14,6 +14,9 @@ const Dashboard = ({
     getCurrentProfile();
   }, []);
 
+  if(role === 'Admin'){
+    return <Redirect to='/Admin' />;
+  }
 
   if (role === 'none') {
     return (
@@ -22,23 +25,6 @@ const Dashboard = ({
       </>
     );
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   if (role === 'Sales Admin') {
     return (

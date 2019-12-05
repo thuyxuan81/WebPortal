@@ -1,10 +1,10 @@
-/*import React from 'react';
+import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
 import { connect } from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
 import axios from 'axios';
-import { Table, Container} from 'react-bootstrap';
+import { Table, Container, Col, Row } from 'react-bootstrap'
 
 
 const Admin = ({ auth: {user}, logout}) => {
@@ -33,14 +33,59 @@ const Admin = ({ auth: {user}, logout}) => {
             'Content-Type': 'application/json'
         }
     };
-    const body = JSON.stringify({ role: value });
+    const body = JSON.stringify({ userRole: value });
     await axios.put(`/api/users/${targetUser}`, body, config);
   };
 
   return (
-    <div>
-     Admin 
-    </div>
+    <>
+      <h2>Admin Dashboard</h2>
+      <Container>
+        <Row>
+          <Col>
+            <p>
+              <Link to='/Manage-User-Accounts' className='btn btn-primary my-1'>
+                Manage User Accounts
+              </Link>
+            </p>
+            <p>
+              <Link to='/Assign-Roles' className='btn btn-primary my-1'>
+                Assign Roles
+              </Link>
+            </p>
+            <p>
+              <Link to='/Help-Desk' className='btn btn-primary my-1'>
+                Help Desk
+              </Link>
+            </p>
+          </Col>
+          <Col md={{ span: 8, offset: 1}}>
+            <form onSubmit={handleSubmit}>
+              <Table striped bordered hover>
+                <thead>
+                  <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {userData.map(u => (
+                    <tr>
+                      <td>{u.firstName}</td>
+                      <td>{u.lastName}</td>
+                      <td>{u.email}</td>
+                      <td>{u.role}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </Table>
+            </form>
+          </Col>
+        </Row>
+      </Container>
+    </>
   )
 }
 
@@ -56,8 +101,8 @@ const mapStateToProps = state => ({
 
 export default connect(mapStateToProps, {
   logout
-})(Admin);*/
-import React from 'react'
+})(Admin);
+/*import React from 'react'
 import PropTypes from 'prop-types'
 import { Table, Container, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -128,4 +173,4 @@ Admin.propTypes = {
 }
 
 export default Admin
-
+*/

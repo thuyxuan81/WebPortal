@@ -21,7 +21,10 @@ const Dashboard = ({
   if (role === 'none') {
     return (
       <>
-        <h1 className='large text-primary'>You dont have a role assinged</h1>
+        <h5 className='large text-primary'>
+          You dont have a role assinged, please wait for your administrator to assign you one.
+          Thank You!
+        </h5>
       </>
     );
   }

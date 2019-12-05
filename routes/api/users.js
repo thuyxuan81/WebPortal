@@ -6,6 +6,19 @@ const jwt = require('jsonwebtoken');
 const config = require('config');
 
 
+router.get('/', async (req, res) => {
+  try {
+    const users = await User.find().select('-password');
+    res.send(users);
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
+});
+
+
+
+
 const User = require('../../models/User');
 router.post(
   '/', 
